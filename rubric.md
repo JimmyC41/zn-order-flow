@@ -245,12 +245,10 @@ Constraints the model must meet to make HD possible. All are inference from the 
 
 ## Open Questions
 
-- **Dataset submission:** the submission list names report, code and AI transparency, not the data. Do we submit the dataset or a sample of it?
+- **Dataset submission:** the submission list names report, code and AI transparency, not the data. The Databento licence does not allow sharing it. Is the code plus fetch instructions enough?
 - **Word count:** does "etc." exclude references, appendices, the AI transparency statement and code listings?
 - **AI transparency format:** a section in the report, an appendix or a separate file?
 - **Collaboration evidence:** Criterion 4 is 25% of the mark, but the spec doesn't say how teamwork is shown in the report. Is it peer evaluation alone, or should the report include a contribution or roles table?
 - **Peer evaluation timing:** the tool "will become available once your Group Project has been submitted", yet it is due "by the same deadline". Confirm the actual close date
 - **10% penalty:** 10% of the project mark or of the course? Do peer scores adjust individual grades?
 - **"Client" order flow:** the spec says client order flow. Our trades come from one exchange and carry no client identity. Is exchange trade flow an accepted stand-in?
-- **Sample length:** the spec sets no minimum. Is five days to fit and five to validate enough for the marker?
-- **Lecture coverage:** only the Week 9 slides are available. Other weeks may hold concepts the marker expects to see applied
