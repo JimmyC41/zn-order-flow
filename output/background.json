@@ -1,0 +1,30 @@
+{
+ "days": 116,
+ "first_day": "2025-11-03",
+ "last_day": "2026-04-30",
+ "trades_in_session": 6872372,
+ "share_no_exchange_side": 0.010957061113688257,
+ "trades_signed": 6797071,
+ "orders": 3552370,
+ "days_by_kind": {
+  "none": 102,
+  "data release": 10,
+  "fed decision": 4
+ },
+ "orders_per_minute": 76.55969827586208,
+ "trade_share_size_1": 0.6062849718650872,
+ "order_size_median": 3.0,
+ "order_size_mean": 37.902627541613064,
+ "order_share_size_1": 0.3797678732789659,
+ "volume_share_top_1pct_orders": 0.31426315068391714,
+ "buy_volume_share_day_min": 0.46241052010880246,
+ "buy_volume_share_day_max": 0.5448557930424738,
+ "gap_median_s": 0.002023168,
+ "gap_mean_s": 0.7837222209442816,
+ "spread_one_tick_share": 0.9986521674262535,
+ "quote_size_median": 2452.0,
+ "direction_autocorrelation": {
+  "1": 0.5920783425784352,
+  "100": 0.033732435391233495
+ }
+}

@@ -1,0 +1,7 @@
+,per minute
+minutes,16735.0
+ticks_per_1000_contracts_fit_months,0.3117400536364998
+ticks_per_1000_contracts_this_sample,0.3378961391109442
+r2_using_fit_months_slope,0.2843399743760485
+rmse_ticks,0.8790135351172043
+rmse_ticks_no_model,1.0390637232499298

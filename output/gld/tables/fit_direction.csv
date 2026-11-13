@@ -1,0 +1,3 @@
+,log_loss,accuracy
+coin flip,0.6931471805599454,0.5
+depends on previous order,0.6845603279335423,0.5652111301342464

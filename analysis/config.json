@@ -1,0 +1,68 @@
+{
+  "files": [
+    "data/databento/ZN_tbbo/*.parquet"
+  ],
+  "news_file": "data/news_releases.csv",
+  "session_open": "08:20",
+  "session_close": "15:00",
+  "bucket_seconds": 600,
+  "tick": 0.015625,
+  "fit_start": "2025-11-01",
+  "fit_end": "2026-04-30",
+  "validate_end": "2026-08-31",
+  "test_end": "2026-10-31",
+  "merge_us": 100,
+  "decay_starts": [
+    [
+      0.4,
+      [
+        0.3,
+        0.3
+      ],
+      [
+        1000,
+        5
+      ]
+    ],
+    [
+      0.4,
+      [
+        0.3,
+        0.2
+      ],
+      [
+        5000,
+        20
+      ]
+    ]
+  ],
+  "arrival_fit_day_step": 4,
+  "size_spikes": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    20,
+    25,
+    50,
+    100
+  ],
+  "size_tail_share": 0.02,
+  "horizons_s": [
+    1,
+    5,
+    10,
+    30,
+    60
+  ],
+  "sim_days": 200,
+  "seed": 0,
+  "reaction_ms": [
+    1,
+    100,
+    1000
+  ],
+  "quote_horizon_s": 10
+}

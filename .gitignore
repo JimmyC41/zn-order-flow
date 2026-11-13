@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.DS_Store
+*.pdf
+lectures/
+data/*
+!data/news_releases.csv

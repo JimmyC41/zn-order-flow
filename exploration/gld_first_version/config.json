@@ -1,0 +1,13 @@
+{
+  "tick_files": ["data/FINS3666_Core_Data/data/GLD_ARCA_mbp1_*.parquet"],
+  "symbol": "GLD",
+  "fit_end": "2026-05-08",
+  "merge_ms": 1.0,
+  "decay_speeds": 2,
+  "quote_files": ["data/FINS3666_Core_Data/data/GLD_ARCA_bbo_1s_*.parquet"],
+  "quote_build_end": "2026-07-31",
+  "aux_tick_files": ["data/FINS3666_Core_Data/data/GC_contracts_mbp1_*.parquet"],
+  "aux_symbol": "GCM6",
+  "sim_days": 200,
+  "seed": 0
+}

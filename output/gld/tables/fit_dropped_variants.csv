@@ -1,0 +1,3 @@
+,slope,r2_later_days,same_second_correlation,r2_own_lag_only,r2_with_futures_lag
+minute imbalance from previous minute,0.08463841494669566,0.007439718846135923,,,
+GCM6 trades one second earlier,,,0.4808512194406809,0.075406822235212,0.07158991255619507
