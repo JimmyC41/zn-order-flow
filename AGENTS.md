@@ -10,6 +10,14 @@ Context for agents working on the FINS3666 group project: a model of order flow 
 - A statistic added after the test run is reported on the validation months only
 - Don't change the GitHub repo's visibility. Jimmy does that himself
 
+## Validation residuals
+
+- If asked for arrival residuals, run `python analysis/export_validation_residuals.py` from the repo root. It uses the frozen parameters in `output/model.json` and only the May–August validation files. The README lists the inputs and the validation-only download command.
+- Read the local Parquet with `pandas.read_parquet`. Use `rescaled_gap_self_exciting` for the refined model. Group by `session_date_ny` and sort by `order_in_session` before computing lags. Pair gaps only within the same session. The first exported row ends at order 2.
+- For Ben's Anderson–Darling check, the reference distribution is exponential with mean 1. Use it to check the gap distribution and use autocorrelation to check serial dependence. Report effect sizes and account for dependence if reporting p-values.
+- For day-by-day stability, compare the daily KS distance against the same exponential reference used in the report. Include each day's gap count and use `session_kind` for news-day comparisons. Explain whether errors are widespread or concentrated in a few sessions.
+- Keep the raw files, the per-order export, and API keys out of Git. Report any new diagnostics on the validation months only.
+
 ## References
 
 - Report draft: `report.md`, in dot points for the team to write up
