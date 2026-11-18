@@ -41,6 +41,22 @@ A model of the orders arriving in 10-year US Treasury note futures (ZN) on CME: 
 - `validate` and `test` score the saved model on unseen months
 - To change the data or the split, edit `analysis/config.json`
 
+## Export validation residuals
+
+With the Python packages above installed and the May–August 2026 files on disk, run from the repo root:
+
+```sh
+python analysis/export_validation_residuals.py
+```
+
+If the four files are missing, configure your Databento key as above, check the price, and download just the validation months. The download end date is exclusive.
+
+```sh
+python analysis/fetch.py GLBX.MDP3 ZN.v.0 2026-05-01 2026-09-01 data/databento/ZN_tbbo
+```
+
+The export uses `output/model.json` and writes `data/validation_arrival_residuals.parquet`, which is ignored by Git. For the project data, expect 2,413,945 rows across 80 New York trading sessions. Each row gives the rescaled gap ending at `order_in_session`, starting at order 2 for each `session_date_ny`. `session_kind` identifies data-release days, Fed decision days, and other days. `rescaled_gap_self_exciting` is the refined model. The other three `rescaled_gap_` columns are the arrival-model comparisons.
+
 ## Not Included
 
 - The Databento data. Its licence does not allow sharing
