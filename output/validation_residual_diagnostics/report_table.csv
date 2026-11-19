@@ -1,0 +1,5 @@
+evidence_status,model,gap_count,mean,sample_variance,ks_exp1,ad_exp1,ad_per_gap,ad_status,nonpositive_count,P_z_gt_3_percent,P_z_gt_5_percent,median_daily_lag1_correlation,p05_daily_lag1_correlation,p95_daily_lag1_correlation
+actual_validation,Constant rate,2413945,1.014890139,10.93505449,0.6482658902,inf,inf,infinite_nonpositive_residual,19,9.951428057,6.185517897,0.332336604,0.2854812263,0.3714328073
+actual_validation,Time of day,2413945,0.9776790913,9.778459971,0.6420332484,inf,inf,infinite_nonpositive_residual,19,9.648065718,5.965256044,0.3228430103,0.2779972052,0.3654919863
+actual_validation,Time of day + news,2413945,1.018054602,10.70174425,0.6380369599,inf,inf,infinite_nonpositive_residual,19,9.920648565,6.197531427,0.3187140357,0.2693831925,0.3654919863
+actual_validation,Refined Hawkes,2413945,1.001405034,1.377083873,0.05188483611,inf,inf,infinite_nonpositive_residual,19,5.182636721,1.384082902,0.153593557,0.06505740285,0.2112194567
