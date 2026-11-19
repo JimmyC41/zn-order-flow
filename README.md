@@ -57,6 +57,16 @@ python analysis/fetch.py GLBX.MDP3 ZN.v.0 2026-05-01 2026-09-01 data/databento/Z
 
 The export uses `output/model.json` and writes `data/validation_arrival_residuals.parquet`, which is ignored by Git. For the project data, expect 2,413,945 rows across 80 New York trading sessions. Each row gives the rescaled gap ending at `order_in_session`, starting at order 2 for each `session_date_ny`. `session_kind` identifies data-release days, Fed decision days, and other days. `rescaled_gap_self_exciting` is the refined model. The other three `rescaled_gap_` columns are the arrival-model comparisons.
 
+### Check the frozen arrival models
+
+Read the [residual summary](output/validation_residual_diagnostics/report_table.csv) for all four models. To reproduce the within-day autocorrelations, daily fit and tail frequencies, first export the residuals as above, then run:
+
+```sh
+python analysis/residual_pipeline.py data/validation_arrival_residuals.parquet --output-dir data/residual_checks --model-file output/model.json --require-official-counts --include-ad --report
+```
+
+The final message should show `ZN VALIDATION` for 2,413,945 gaps across 80 sessions. The tables and figure are in `data/residual_checks/`. Use a new output directory for each run.
+
 ## Not Included
 
 - The Databento data. Its licence does not allow sharing

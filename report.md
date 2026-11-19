@@ -261,7 +261,9 @@ FINS3666 Group Project, Appendix B: Client Order Flow Analysis. Idea-level draft
 | Limitation | The busiest second is understated | Table 6: 97 against 182 |
 | Limitation | The quoting rule avoids losses but keeps nothing after fees | Table 11 |
 | Limitation | Aggressive orders only | No client identity, no resting orders |
-| Limitation | The best model still fails a strict test | Fit error 0.05 against a 5% threshold near 0.001 |
+| Limitation | The refined model still misses part of the gap distribution | The largest difference between observed and predicted cumulative shares is 5.2 percentage points on validation (Table 8) |
+
+Across all 80 validation days, the Hawkes model fit order timing better than the constant-rate model, but successive rescaled gaps remained positively correlated and unusually long waits occurred about twice as often as predicted.
 
 - **The limit that matters most: activity over the next 10 minutes**
   - The refined count error is 38% on the validation months
